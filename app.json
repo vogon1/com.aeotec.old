@@ -1,7 +1,7 @@
 {
   "id": "com.aeotec",
   "name": {
-    "en": "Aeotec+Minimote"
+    "en": "Aeotec"
   },
   "version": "1.5.3",
   "compatibility": ">=1.0.0",
@@ -506,12 +506,6 @@
           {
             "capabilities": [],
             "id": "icon"
-          },
-          {
-            "capabilities": [
-              "measure_battery"
-            ],
-            "id": "battery"
           }
         ]
       },
@@ -1805,7 +1799,6 @@
           513
         ],
         "productId": [
-          3,
           22,
           88
         ],
