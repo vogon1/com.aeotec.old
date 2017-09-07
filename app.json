@@ -1,7 +1,7 @@
 {
   "id": "com.aeotec",
   "name": {
-    "en": "Aeotec"
+    "en": "Aeotec+Minimote"
   },
   "version": "1.5.3",
   "compatibility": ">=1.0.0",
@@ -467,6 +467,77 @@
         "large": "/drivers/DSD37/assets/images/large.png",
         "small": "/drivers/DSD37/assets/images/small.png"
       }
+    },
+    {
+      "id": "ZW003",
+      "name": {
+        "en": "Minimote"
+      },
+      "zwave": {
+        "manufacturerId": 134,
+        "productTypeId": [
+          1,
+          513
+        ],
+        "productId": [3],
+        "wakeUpInterval": 300,
+        "learnmode": {
+          "instruction": {
+            "en": "Press the Learn button on your Key Fob. After pairing, press Learn and Mode for 3 seconds, to change the Minimote to User Mode.",
+            "nl": "Druk op de Learn knop op de Key Fob. Na het toevoegen, houd de Learn en Mode voor 3 seconden ingedrukt, om de Minimote in Gebruiker Modus te zetten."
+          }
+        },
+        "associationGroups": [
+          1
+        ],
+        "defaultConfiguration": [
+          {
+            "id": 250,
+            "size": 1,
+            "value": 1
+          }
+        ]
+      },
+      "class": "sensor",
+      "capabilities": [
+      ],
+      "mobile": {
+        "components": [
+          {
+            "capabilities": [],
+            "id": "icon"
+          },
+          {
+            "capabilities": [
+              "measure_battery"
+            ],
+            "id": "battery"
+          }
+        ]
+      },
+      "images": {
+        "large": "/drivers/ZW003/assets/images/large.png",
+        "small": "/drivers/ZW003/assets/images/small.png"
+      },
+      "settings": [
+        {
+          "id": "poll_interval",
+          "type": "number",
+          "attr": {
+            "min": 60,
+            "max": 3600
+          },
+          "value": 240,
+          "label": {
+            "en": "Poll Interval",
+            "nl": "Poll Interval"
+          },
+          "hint": {
+            "en": "The amount of seconds between asking the device for a status update.",
+            "nl": "Aantal seconden tussen het opvragen van een status update aan het apparaat."
+          }
+        }
+      ]
     },
     {
       "id": "ZW062",
@@ -1734,6 +1805,7 @@
           513
         ],
         "productId": [
+          3,
           22,
           88
         ],
@@ -3730,6 +3802,118 @@
             "name": "device",
             "type": "device",
             "filter": "driver_id=DSA38"
+          }
+        ]
+      },
+      {
+        "id": "zw003_press_1",
+        "title": {
+          "en": "Left top short pressed",
+          "nl": "Linksboven kort ingedrukt"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=ZW003"
+          }
+        ]
+      },
+      {
+        "id": "zw003_hold_1",
+        "title": {
+          "en": "Left top long pressed",
+          "nl": "Linksboven lang ingedrukt"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=ZW003"
+          }
+        ]
+      },
+      {
+        "id": "zw003_press_2",
+        "title": {
+          "en": "Right top short pressed",
+          "nl": "Rechtsboven kort ingedrukt"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=ZW003"
+          }
+        ]
+      },
+      {
+        "id": "zw003_hold_2",
+        "title": {
+          "en": "Right top long pressed",
+          "nl": "Rechtsboven lang ingedrukt"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=ZW003"
+          }
+        ]
+      },
+      {
+        "id": "zw003_press_3",
+        "title": {
+          "en": "Left bottom short pressed",
+          "nl": "Linksonder kort ingedrukt"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=ZW003"
+          }
+        ]
+      },
+      {
+        "id": "zw003_hold_3",
+        "title": {
+          "en": "Left bottom long pressed",
+          "nl": "Linksonder lang ingedrukt"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=ZW003"
+          }
+        ]
+      },
+      {
+        "id": "zw003_press_4",
+        "title": {
+          "en": "Right bottom short pressed",
+          "nl": "Rechtsonder kort ingedrukt"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=ZW003"
+          }
+        ]
+      },
+      {
+        "id": "zw003_hold_4",
+        "title": {
+          "en": "Right bottom long pressed",
+          "nl": "Rechtsonder lang ingedrukt"
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=ZW003"
           }
         ]
       },

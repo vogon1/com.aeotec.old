@@ -3,6 +3,9 @@
 This app adds support for Aeotec devices in Homey.
 
 ### Changelog:
+**1.5.3**
+* Add support for ZW003 - Minimote:
+
 **1.5.2**
 * ZW100 - MultiSensor 6 update:
   - Added Tamper Capability (re-pair needed)
